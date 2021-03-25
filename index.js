@@ -6,7 +6,11 @@ function currentTime() {
     let seconds = date.getSeconds();
 
     return (`${hours}:${minutes}:${seconds}`);
+
 }
 
 
-console.log(currentTime());
+
+let clockRenderSection = document.getElementById("clock-render");
+
+clockRenderSection.innerHTML = currentTime();
