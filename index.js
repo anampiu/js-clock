@@ -4,13 +4,12 @@ function currentTime() {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
+    let time = (`${hours}:${minutes}:${seconds}`)
 
-    return (`${hours}:${minutes}:${seconds}`);
+    let clockRenderSection = document.getElementById("clock-render");
+    clockRenderSection.innerHTML = time;
+    setTimeout(currentTime, 1000);
 
 }
 
-
-
-let clockRenderSection = document.getElementById("clock-render");
-
-clockRenderSection.innerHTML = currentTime();
+currentTime();
