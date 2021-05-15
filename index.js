@@ -8,7 +8,7 @@ function currentTime() {
 
     let clockRenderSection = document.getElementById("clock-render");
     clockRenderSection.innerHTML = time;
-    setTimeout(currentTime, 1000);
+    setTimeout(currentTime, 10);
 
 }
 
